@@ -6,37 +6,29 @@ log-level: info
 proxies:
 - name: 🇰🇷 韩国 (South Korea) 01 (家宽) - xiaohe
   type: vless
-  server: 104.21.55.229
-  port: 8880
-  uuid: 4a40e7a6-9179-42c1-9bd7-eefec23a62f8
+  server: 188.114.97.6
+  port: 2087
+  uuid: 77777777-8a3e-6666-b6d1-a9c5f0e8b3a2
   udp: true
-  tls: false
+  tls: true
   skip-cert-verify: true
+  servername: fx3h2kf8xn.fx6hsv0.ccwu.cc
   network: ws
   ws-opts:
-    path: /pyip=ProxyIP.KR.CMLiussss.net
+    path: /?ed=2560
     headers:
-      Host: soft-meadow-980a.458.workers.dev
-- name: 🇰🇷 韩国 (South Korea) 02 (家宽) - xiaohe
-  type: ss
-  server: glance.asuscomm.com
-  port: 10099
-  cipher: chacha20-ietf-poly1305
-  password: '12242'
-  udp: true
+      Host: fx3h2kf8xn.fx6hsv0.ccwu.cc
 proxy-groups:
 - name: PROXIES
   type: select
   proxies:
   - AUTO
   - 🇰🇷 韩国 (South Korea) 01 (家宽) - xiaohe
-  - 🇰🇷 韩国 (South Korea) 02 (家宽) - xiaohe
 - name: AUTO
   type: url-test
   url: https://www.google.com/generate_204
   interval: 300
   proxies:
   - 🇰🇷 韩国 (South Korea) 01 (家宽) - xiaohe
-  - 🇰🇷 韩国 (South Korea) 02 (家宽) - xiaohe
 rules:
 - MATCH,PROXIES

@@ -27,48 +27,19 @@ proxies:
     headers:
       Host: 94.183.170.135
 - name: 🇪🇪 EE 03 - xiaohe
-  type: vmess
-  server: 64.188.82.159
+  type: vless
+  server: 94.183.170.135
   port: 443
-  uuid: db50a20e-7ff5-4e70-948f-17cc9ca7c154
-  alterId: 0
-  cipher: auto
+  uuid: 06c4e938-2954-478f-a870-ca1b163e30e9
   udp: true
-  tls: true
+  tls: false
   skip-cert-verify: true
-  servername: renderer-stream-2-62.mirra.now
   network: ws
   ws-opts:
-    path: /api/v1/gpu-stream/socket
+    path: /
     headers:
-      Host: renderer-stream-2-62.mirra.now
+      Host: 94.183.170.135
 - name: 🇪🇪 EE 04 - xiaohe
-  type: vless
-  server: 94.183.170.135
-  port: 443
-  uuid: 06c4e938-2954-478f-a870-ca1b163e30e9
-  udp: true
-  tls: false
-  skip-cert-verify: true
-  network: ws
-  ws-opts:
-    path: /
-    headers:
-      Host: 94.183.170.135
-- name: 🇪🇪 EE 05 - xiaohe
-  type: vless
-  server: 94.183.170.135
-  port: 443
-  uuid: 06c4e938-2954-478f-a870-ca1b163e30e9
-  udp: true
-  tls: false
-  skip-cert-verify: true
-  network: ws
-  ws-opts:
-    path: /
-    headers:
-      Host: 94.183.170.135
-- name: 🇪🇪 EE 06 - xiaohe
   type: vless
   server: 94.183.170.135
   port: 8443
@@ -86,8 +57,6 @@ proxy-groups:
   - 🇪🇪 EE 02 - xiaohe
   - 🇪🇪 EE 03 - xiaohe
   - 🇪🇪 EE 04 - xiaohe
-  - 🇪🇪 EE 05 - xiaohe
-  - 🇪🇪 EE 06 - xiaohe
 - name: AUTO
   type: url-test
   url: https://www.google.com/generate_204
@@ -97,7 +66,5 @@ proxy-groups:
   - 🇪🇪 EE 02 - xiaohe
   - 🇪🇪 EE 03 - xiaohe
   - 🇪🇪 EE 04 - xiaohe
-  - 🇪🇪 EE 05 - xiaohe
-  - 🇪🇪 EE 06 - xiaohe
 rules:
 - MATCH,PROXIES
