@@ -6,12 +6,13 @@ log-level: info
 proxies:
 - name: 🇹🇷 土耳其 (Turkey) 01 - xiaohe
   type: vless
-  server: 206.1.96.228
-  port: 8082
-  uuid: bfb3f06c-e33f-41ac-b101-012c8325a689
+  server: 195.162.69.203
+  port: 8443
+  uuid: 953358cb-82ba-4296-960d-6d2ec3468f4c
   udp: true
-  tls: false
+  tls: true
   skip-cert-verify: true
+  servername: 195-162-69-203.sslip.io
 - name: 🇹🇷 土耳其 (Turkey) 02 - xiaohe
   type: vless
   server: 195.162.69.203
@@ -23,6 +24,20 @@ proxies:
   servername: 195-162-69-203.sslip.io
 - name: 🇹🇷 土耳其 (Turkey) 03 - xiaohe
   type: vless
+  server: 104.17.169.13
+  port: 2053
+  uuid: a22bff60-a40a-4250-bde2-4c660e363b47
+  udp: true
+  tls: true
+  skip-cert-verify: true
+  servername: inDeX.HaRMONiCA01.WORkers.DeV
+  network: ws
+  ws-opts:
+    path: /axch1mttbxz2k55y01
+    headers:
+      Host: inDeX.HaRMONiCA01.WORkers.DeV
+- name: 🇹🇷 土耳其 (Turkey) 04 - xiaohe
+  type: vless
   server: 195.162.69.203
   port: 8443
   uuid: 953358cb-82ba-4296-960d-6d2ec3468f4c
@@ -30,26 +45,6 @@ proxies:
   tls: true
   skip-cert-verify: true
   servername: 195-162-69-203.sslip.io
-- name: 🇹🇷 土耳其 (Turkey) 04 - xiaohe
-  type: vless
-  server: 151.241.226.201
-  port: 2053
-  uuid: e691b034-dfc9-4f22-80aa-6d4f6404a4df
-  udp: true
-  tls: true
-  skip-cert-verify: true
-  reality-opts:
-    public-key: k5COjpopVNGzEuMb457zCrrZegSdBX-d8bg0G6HDsE4
-  servername: www.apple.com
-  client-fingerprint: firefox
-- name: 🇹🇷 土耳其 (Turkey) 05 - xiaohe
-  type: vless
-  server: 206.1.96.228
-  port: 8082
-  uuid: bfb3f06c-e33f-41ac-b101-012c8325a689
-  udp: true
-  tls: false
-  skip-cert-verify: true
 proxy-groups:
 - name: PROXIES
   type: select
@@ -59,7 +54,6 @@ proxy-groups:
   - 🇹🇷 土耳其 (Turkey) 02 - xiaohe
   - 🇹🇷 土耳其 (Turkey) 03 - xiaohe
   - 🇹🇷 土耳其 (Turkey) 04 - xiaohe
-  - 🇹🇷 土耳其 (Turkey) 05 - xiaohe
 - name: AUTO
   type: url-test
   url: https://www.google.com/generate_204
@@ -69,6 +63,5 @@ proxy-groups:
   - 🇹🇷 土耳其 (Turkey) 02 - xiaohe
   - 🇹🇷 土耳其 (Turkey) 03 - xiaohe
   - 🇹🇷 土耳其 (Turkey) 04 - xiaohe
-  - 🇹🇷 土耳其 (Turkey) 05 - xiaohe
 rules:
 - MATCH,PROXIES
