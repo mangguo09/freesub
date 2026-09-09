@@ -5,15 +5,18 @@ mode: rule
 log-level: info
 proxies:
 - name: 🇲🇾 MY 01 - xiaohe
-  type: vmess
-  server: 47.250.135.244
-  port: 10000
-  uuid: aedc66b8-99d7-4a21-8310-61870e7f870d
-  alterId: 0
-  cipher: auto
+  type: vless
+  server: 38.60.168.98
+  port: 2087
+  uuid: 8a346b7c-5b95-4845-affa-0e5d9929e9ae
   udp: true
   tls: false
   skip-cert-verify: true
+  network: ws
+  ws-opts:
+    path: /db55c40bbc75
+    headers:
+      Host: 38.60.168.98
 - name: 🇲🇾 MY 02 - xiaohe
   type: vless
   server: 38.60.168.98
@@ -30,8 +33,8 @@ proxies:
 - name: 🇲🇾 MY 03 - xiaohe
   type: vmess
   server: 47.250.45.234
-  port: 43063
-  uuid: c77f48f5-4be3-4461-b52b-49998e7b897b
+  port: 8613
+  uuid: 80039b4d-bac0-4f89-82c7-54fad3b0a1ea
   alterId: 0
   cipher: auto
   udp: true
@@ -41,7 +44,7 @@ proxies:
   ws-opts:
     path: /arki?ed=2048
     headers:
-      Host: ''
+      Host: 47.250.45.234
 - name: 🇲🇾 MY 04 - xiaohe
   type: vless
   server: 38.60.168.98
