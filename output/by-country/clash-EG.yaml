@@ -16,19 +16,6 @@ proxies:
   ws-opts:
     path: /d1000b16fe76
     headers:
-      Host: telegram-leviko_v2ray
-- name: 🇪🇬 EG 02 - xiaohe
-  type: vless
-  server: 38.54.59.209
-  port: 2087
-  uuid: cd842ef8-9577-47f3-83ca-627147ed291b
-  udp: true
-  tls: false
-  skip-cert-verify: true
-  network: ws
-  ws-opts:
-    path: /d1000b16fe76
-    headers:
       Host: 38.54.59.209
 proxy-groups:
 - name: PROXIES
@@ -36,13 +23,11 @@ proxy-groups:
   proxies:
   - AUTO
   - 🇪🇬 EG 01 - xiaohe
-  - 🇪🇬 EG 02 - xiaohe
 - name: AUTO
   type: url-test
   url: https://www.google.com/generate_204
   interval: 300
   proxies:
   - 🇪🇬 EG 01 - xiaohe
-  - 🇪🇬 EG 02 - xiaohe
 rules:
 - MATCH,PROXIES

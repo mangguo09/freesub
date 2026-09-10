@@ -6,18 +6,6 @@ log-level: info
 proxies:
 - name: 🇧🇬 BG 01 - xiaohe
   type: vless
-  server: 94.156.155.27
-  port: 443
-  uuid: 218fd696-e3a2-4c33-b397-a5f13a82969e
-  udp: true
-  tls: true
-  skip-cert-verify: true
-  reality-opts:
-    public-key: bY0-zlTOPCaEWDMw_BTzuzJW513tl6Hc61n4Z-q1cHE
-  servername: www.telekom.de
-  client-fingerprint: firefox
-- name: 🇧🇬 BG 02 - xiaohe
-  type: vless
   server: 192.145.31.5
   port: 8443
   uuid: 9f73cf9a-c68f-4e6d-90f0-e66b64f52f8a
@@ -31,13 +19,11 @@ proxy-groups:
   proxies:
   - AUTO
   - 🇧🇬 BG 01 - xiaohe
-  - 🇧🇬 BG 02 - xiaohe
 - name: AUTO
   type: url-test
   url: https://www.google.com/generate_204
   interval: 300
   proxies:
   - 🇧🇬 BG 01 - xiaohe
-  - 🇧🇬 BG 02 - xiaohe
 rules:
 - MATCH,PROXIES
