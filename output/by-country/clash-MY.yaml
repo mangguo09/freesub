@@ -18,30 +18,31 @@ proxies:
     headers:
       Host: 38.60.168.98
 - name: 🇲🇾 MY 02 - xiaohe
-  type: vmess
-  server: 47.250.135.244
-  port: 10000
-  uuid: aedc66b8-99d7-4a21-8310-61870e7f870d
-  alterId: 0
-  cipher: auto
-  udp: true
-  tls: false
-  skip-cert-verify: true
-- name: 🇲🇾 MY 03 - xiaohe
-  type: vmess
-  server: 47.250.45.234
-  port: 43063
-  uuid: c77f48f5-4be3-4461-b52b-49998e7b897b
-  alterId: 0
-  cipher: auto
+  type: vless
+  server: 38.60.168.98
+  port: 2087
+  uuid: 8a346b7c-5b95-4845-affa-0e5d9929e9ae
   udp: true
   tls: false
   skip-cert-verify: true
   network: ws
   ws-opts:
-    path: /arki?ed=2048
+    path: /db55c40bbc75
     headers:
-      Host: ''
+      Host: 38.60.168.98
+- name: 🇲🇾 MY 03 - xiaohe
+  type: vless
+  server: 104.16.100.66
+  port: 8880
+  uuid: 3e7bb66e-d7c6-4711-aa05-e4ab0ec58c6d
+  udp: true
+  tls: false
+  skip-cert-verify: true
+  network: ws
+  ws-opts:
+    path: /pyip=ProxyIP.SG.CMLiussss.net
+    headers:
+      Host: shrill-cell-cca7.158-6fa.workers.dev
 proxy-groups:
 - name: PROXIES
   type: select
