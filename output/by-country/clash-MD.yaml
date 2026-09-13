@@ -4,29 +4,31 @@ allow-lan: true
 mode: rule
 log-level: info
 proxies:
-- name: 🇸🇦 SA 01 - xiaohe
+- name: 🇲🇩 MD 01 - xiaohe
   type: vless
-  server: 81.208.170.142
-  port: 1500
-  uuid: e332f028-d343-5b44-8016-b3130f39e133
+  server: 193.36.38.17
+  port: 443
+  uuid: 2eadb97f-bba4-4471-8d55-bd461525a2dc
   udp: true
   tls: true
   skip-cert-verify: true
-  reality-opts:
-    public-key: VQxVgczORkbSNdDrkNOYs6zMBINpViztTKDuWCeQsVE
-  servername: www.ebay.com
-  client-fingerprint: chrome
+  servername: eded-52n.pages.dev
+  network: ws
+  ws-opts:
+    path: /
+    headers:
+      Host: eded-52n.pages.dev
 proxy-groups:
 - name: PROXIES
   type: select
   proxies:
   - AUTO
-  - 🇸🇦 SA 01 - xiaohe
+  - 🇲🇩 MD 01 - xiaohe
 - name: AUTO
   type: url-test
   url: https://www.google.com/generate_204
   interval: 300
   proxies:
-  - 🇸🇦 SA 01 - xiaohe
+  - 🇲🇩 MD 01 - xiaohe
 rules:
 - MATCH,PROXIES
