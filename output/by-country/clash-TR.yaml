@@ -6,10 +6,10 @@ log-level: info
 proxies:
 - name: 🇹🇷 土耳其 (Turkey) 01 - xiaohe
   type: ss
-  server: 185.39.204.3
-  port: 8098
+  server: 188.132.174.236
+  port: 1080
   cipher: chacha20-ietf-poly1305
-  password: PluSKSrbtxTvlVv7BOUwn4
+  password: rSeYcig_XBy8q3k33NpK3A
   udp: true
 - name: 🇹🇷 土耳其 (Turkey) 02 - xiaohe
   type: vless
