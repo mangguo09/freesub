@@ -6,54 +6,6 @@ log-level: info
 proxies:
 - name: 🇭🇰 中国香港 (Hong Kong) 01 - xiaohe
   type: vmess
-  server: 47.76.197.72
-  port: 443
-  uuid: f23bb427c1f94373876c2f43e9f790f3
-  alterId: 0
-  cipher: auto
-  udp: true
-  tls: true
-  skip-cert-verify: true
-  servername: m01c7b2z26dtqgee.v.3dns.vip
-  network: ws
-  ws-opts:
-    path: /ws-vmess
-    headers:
-      Host: m01c7b2z26dtqgee.v.3dns.vip
-- name: 🇭🇰 中国香港 (Hong Kong) 02 - xiaohe
-  type: vmess
-  server: 47.83.19.148
-  port: 443
-  uuid: f23bb427-c1f9-4373-876c-2f43e9f790f3
-  alterId: 0
-  cipher: auto
-  udp: true
-  tls: true
-  skip-cert-verify: true
-  servername: 6JDvArazgU3qQR6Q.v.3dns.vip
-  network: ws
-  ws-opts:
-    path: /ws-vmess
-    headers:
-      Host: 6JDvArazgU3qQR6Q.v.3dns.vip
-- name: 🇭🇰 中国香港 (Hong Kong) 03 - xiaohe
-  type: vmess
-  server: lcv8v9l7oyamxxfz.v.3dns.vip
-  port: 443
-  uuid: f23bb427c1f94373876c2f43e9f790f3
-  alterId: 0
-  cipher: auto
-  udp: true
-  tls: true
-  skip-cert-verify: true
-  servername: lcv8v9l7OyamxxfZ.v.3dns.vip
-  network: ws
-  ws-opts:
-    path: /ws-vmess
-    headers:
-      Host: lcv8v9l7OyamxxfZ.v.3dns.vip
-- name: 🇭🇰 中国香港 (Hong Kong) 04 - xiaohe
-  type: vmess
   server: 47.243.92.155
   port: 443
   uuid: f23bb427c1f94373876c2f43e9f790f3
@@ -68,9 +20,25 @@ proxies:
     path: /ws-vmess
     headers:
       Host: mTCKUNDiGePwU3uP.v.3dns.vip
-- name: 🇭🇰 中国香港 (Hong Kong) 05 - xiaohe
+- name: 🇭🇰 中国香港 (Hong Kong) 02 - xiaohe
   type: vmess
-  server: ejomsxptp19apygl.v.3dns.vip
+  server: 8.218.184.4
+  port: 443
+  uuid: f23bb427-c1f9-4373-876c-2f43e9f790f3
+  alterId: 0
+  cipher: auto
+  udp: true
+  tls: true
+  skip-cert-verify: true
+  servername: NYcQg19zkwaCPM1B.v.3dns.vip
+  network: ws
+  ws-opts:
+    path: /ws-vmess
+    headers:
+      Host: NYcQg19zkwaCPM1B.v.3dns.vip
+- name: 🇭🇰 中国香港 (Hong Kong) 03 - xiaohe
+  type: vmess
+  server: 47.83.19.148
   port: 443
   uuid: f23bb427c1f94373876c2f43e9f790f3
   alterId: 0
@@ -78,13 +46,13 @@ proxies:
   udp: true
   tls: true
   skip-cert-verify: true
-  servername: ejomsxptp19apygl.v.3dns.vip
+  servername: 6JDvArazgU3qQR6Q.v.3dns.vip
   network: ws
   ws-opts:
     path: /ws-vmess
     headers:
-      Host: ejomsxptp19apygl.v.3dns.vip
-- name: 🇭🇰 中国香港 (Hong Kong) 06 - xiaohe
+      Host: 6JDvArazgU3qQR6Q.v.3dns.vip
+- name: 🇭🇰 中国香港 (Hong Kong) 04 - xiaohe
   type: vmess
   server: 8.217.229.155
   port: 443
@@ -100,11 +68,27 @@ proxies:
     path: /ws-vmess
     headers:
       Host: qTKDR8jXE3wEFxJM.v.3dns.vip
-- name: 🇭🇰 中国香港 (Hong Kong) 07 - xiaohe
+- name: 🇭🇰 中国香港 (Hong Kong) 05 - xiaohe
+  type: vmess
+  server: 47.83.207.148
+  port: 443
+  uuid: f23bb427c1f94373876c2f43e9f790f3
+  alterId: 0
+  cipher: auto
+  udp: true
+  tls: true
+  skip-cert-verify: true
+  servername: VAH4URdZL3jDX5r2.v.3dns.vip
+  network: ws
+  ws-opts:
+    path: /ws-vmess
+    headers:
+      Host: VAH4URdZL3jDX5r2.v.3dns.vip
+- name: 🇭🇰 中国香港 (Hong Kong) 06 - xiaohe
   type: vmess
   server: 47.83.19.148
   port: 443
-  uuid: f23bb427c1f94373876c2f43e9f790f3
+  uuid: f23bb427-c1f9-4373-876c-2f43e9f790f3
   alterId: 0
   cipher: auto
   udp: true
@@ -116,11 +100,11 @@ proxies:
     path: /ws-vmess
     headers:
       Host: 6JDvArazgU3qQR6Q.v.3dns.vip
-- name: 🇭🇰 中国香港 (Hong Kong) 08 - xiaohe
+- name: 🇭🇰 中国香港 (Hong Kong) 07 - xiaohe
   type: vmess
-  server: 47.244.120.197
-  port: 44867
-  uuid: 845e6b08-2919-4290-ade0-5dc7dcea59ca
+  server: 156.245.232.239
+  port: 35043
+  uuid: b15e481d-17e4-41a8-84c2-23d4f0514d9a
   alterId: 0
   cipher: auto
   udp: true
@@ -128,39 +112,7 @@ proxies:
   skip-cert-verify: true
   network: ws
   ws-opts:
-    path: /arki?ed=2048
-    headers:
-      Host: ''
-- name: 🇭🇰 中国香港 (Hong Kong) 09 - xiaohe
-  type: vmess
-  server: ex1ogt73nzpqkac2.v.3dns.vip
-  port: 443
-  uuid: f23bb427c1f94373876c2f43e9f790f3
-  alterId: 0
-  cipher: auto
-  udp: true
-  tls: true
-  skip-cert-verify: true
-  servername: ex1ogt73nzpqkac2.v.3dns.vip
-  network: ws
-  ws-opts:
-    path: /ws-vmess
-    headers:
-      Host: ex1ogt73nzpqkac2.v.3dns.vip
-- name: 🇭🇰 中国香港 (Hong Kong) 10 - xiaohe
-  type: vmess
-  server: i2psm3knof5qjjix.v.3dns.vip
-  port: 443
-  uuid: f23bb427c1f94373876c2f43e9f790f3
-  alterId: 0
-  cipher: auto
-  udp: true
-  tls: true
-  skip-cert-verify: true
-  servername: ''
-  network: ws
-  ws-opts:
-    path: /ws-vmess
+    path: /
     headers:
       Host: ''
 proxy-groups:
@@ -175,9 +127,6 @@ proxy-groups:
   - 🇭🇰 中国香港 (Hong Kong) 05 - xiaohe
   - 🇭🇰 中国香港 (Hong Kong) 06 - xiaohe
   - 🇭🇰 中国香港 (Hong Kong) 07 - xiaohe
-  - 🇭🇰 中国香港 (Hong Kong) 08 - xiaohe
-  - 🇭🇰 中国香港 (Hong Kong) 09 - xiaohe
-  - 🇭🇰 中国香港 (Hong Kong) 10 - xiaohe
 - name: AUTO
   type: url-test
   url: https://www.google.com/generate_204
@@ -190,8 +139,5 @@ proxy-groups:
   - 🇭🇰 中国香港 (Hong Kong) 05 - xiaohe
   - 🇭🇰 中国香港 (Hong Kong) 06 - xiaohe
   - 🇭🇰 中国香港 (Hong Kong) 07 - xiaohe
-  - 🇭🇰 中国香港 (Hong Kong) 08 - xiaohe
-  - 🇭🇰 中国香港 (Hong Kong) 09 - xiaohe
-  - 🇭🇰 中国香港 (Hong Kong) 10 - xiaohe
 rules:
 - MATCH,PROXIES

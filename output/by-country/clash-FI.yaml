@@ -19,30 +19,6 @@ proxies:
   cipher: chacha20-ietf-poly1305
   password: rSeYcig_XBy8q3k33NpK3A
   udp: true
-- name: 🇫🇮 FI 03 - xiaohe
-  type: vless
-  server: 185.79.138.71
-  port: 448
-  uuid: 0b0915d7-6800-4580-a44b-77d84f105e6a
-  udp: true
-  tls: true
-  skip-cert-verify: true
-  reality-opts:
-    public-key: CsDgNRcCwCkPIslfZpKTIK71KFpIFNsotbdzKcZVoH8
-  servername: www.samsung.com
-  client-fingerprint: chrome
-- name: 🇫🇮 FI 04 - xiaohe
-  type: vless
-  server: 185.79.138.71
-  port: 448
-  uuid: 0b0915d7-6800-4580-a44b-77d84f105e6a
-  udp: true
-  tls: true
-  skip-cert-verify: true
-  reality-opts:
-    public-key: CsDgNRcCwCkPIslfZpKTIK71KFpIFNsotbdzKcZVoH8
-  servername: www.samsung.com
-  client-fingerprint: chrome
 proxy-groups:
 - name: PROXIES
   type: select
@@ -50,8 +26,6 @@ proxy-groups:
   - AUTO
   - 🇫🇮 FI 01 - xiaohe
   - 🇫🇮 FI 02 - xiaohe
-  - 🇫🇮 FI 03 - xiaohe
-  - 🇫🇮 FI 04 - xiaohe
 - name: AUTO
   type: url-test
   url: https://www.google.com/generate_204
@@ -59,7 +33,5 @@ proxy-groups:
   proxies:
   - 🇫🇮 FI 01 - xiaohe
   - 🇫🇮 FI 02 - xiaohe
-  - 🇫🇮 FI 03 - xiaohe
-  - 🇫🇮 FI 04 - xiaohe
 rules:
 - MATCH,PROXIES

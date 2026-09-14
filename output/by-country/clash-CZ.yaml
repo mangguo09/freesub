@@ -6,18 +6,18 @@ log-level: info
 proxies:
 - name: 🇨🇿 CZ 01 - xiaohe
   type: vless
-  server: 104.21.94.81
-  port: 2053
-  uuid: ef23616d-8a9d-4b22-b2f5-9bda864de179
+  server: 172.66.44.124
+  port: 8443
+  uuid: b2f2f9f2-1864-48ea-839b-22815faff1f1
   udp: true
   tls: true
   skip-cert-verify: true
-  servername: INDEX.Arcane509.Workers.DEV
+  servername: stf839dvvyog9d2qa4-b8z6ahgn7b7qi.pages.dev
   network: ws
   ws-opts:
     path: /
     headers:
-      Host: index.arcane509.workers.dev
+      Host: stf839dvvyog9d2qa4-b8z6ahgn7b7qi.pages.dev
 proxy-groups:
 - name: PROXIES
   type: select
