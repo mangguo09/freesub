@@ -19,27 +19,6 @@ proxies:
     headers:
       Host: bab-6.site
 - name: 🇫🇷 法国 (France) 02 - xiaohe
-  type: vless
-  server: 52.47.212.72
-  port: 22224
-  uuid: e4514801-0d5a-42ba-869f-39bd605aef9e
-  udp: true
-  tls: false
-  skip-cert-verify: true
-- name: 🇫🇷 法国 (France) 03 - xiaohe
-  type: vless
-  server: 143.246.209.46
-  port: 8081
-  uuid: 54ee5e59-55a3-4599-83ff-0c67b3f411b2
-  udp: true
-  tls: false
-  skip-cert-verify: true
-  network: ws
-  ws-opts:
-    path: /vless-test
-    headers:
-      Host: 143.246.209.46
-- name: 🇫🇷 法国 (France) 04 - xiaohe
   type: vmess
   server: 162.19.204.71
   port: 1234
@@ -50,6 +29,34 @@ proxies:
   tls: true
   skip-cert-verify: true
   servername: ''
+- name: 🇫🇷 法国 (France) 03 - xiaohe
+  type: vless
+  server: 149.202.58.99
+  port: 443
+  uuid: b585dc5e-55bf-4a8b-913a-27c9ccac05c3
+  udp: true
+  tls: true
+  skip-cert-verify: true
+  servername: bab-6.site
+  network: ws
+  ws-opts:
+    path: /vws/
+    headers:
+      Host: 149.202.58.99
+- name: 🇫🇷 法国 (France) 04 - xiaohe
+  type: vless
+  server: 149.202.58.99
+  port: 443
+  uuid: b585dc5e-55bf-4a8b-913a-27c9ccac05c3
+  udp: true
+  tls: true
+  skip-cert-verify: true
+  servername: bab-6.site
+  network: ws
+  ws-opts:
+    path: /vws/
+    headers:
+      Host: 149.202.58.99
 - name: 🇫🇷 法国 (France) 05 - xiaohe
   type: vless
   server: 149.202.58.99
@@ -66,7 +73,7 @@ proxies:
       Host: bab-6.site
 - name: 🇫🇷 法国 (France) 06 - xiaohe
   type: vless
-  server: 149.202.58.99
+  server: 81.95.4.189
   port: 443
   uuid: b585dc5e-55bf-4a8b-913a-27c9ccac05c3
   udp: true
@@ -77,50 +84,19 @@ proxies:
   ws-opts:
     path: /vws/
     headers:
-      Host: 149.202.58.99
+      Host: bab-6.site
 - name: 🇫🇷 法国 (France) 07 - xiaohe
   type: vless
-  server: 52.47.212.72
-  port: 22223
-  uuid: e4514801-0d5a-42ba-869f-39bd605aef9e
-  udp: true
-  tls: false
-  skip-cert-verify: true
-- name: 🇫🇷 法国 (France) 08 - xiaohe
-  type: vless
-  server: 152.228.162.19
-  port: 80
-  uuid: 5ce84688-f535-46ad-a512-37b17becf6ea
-  udp: true
-  tls: false
-  skip-cert-verify: true
-  network: ws
-  ws-opts:
-    path: /vless/
-    headers:
-      Host: akamaized.net
-- name: 🇫🇷 法国 (France) 09 - xiaohe
-  type: vless
-  server: 52.47.212.72
-  port: 22222
-  uuid: e4514801-0d5a-42ba-869f-39bd605aef9e
-  udp: true
-  tls: false
-  skip-cert-verify: true
-- name: 🇫🇷 法国 (France) 10 - xiaohe
-  type: vless
-  server: 162.159.153.4
-  port: 443
-  uuid: f2a73750-3087-48ff-a763-1348c15dce68
+  server: 51.77.217.70
+  port: 2053
+  uuid: bf16ee0c-8b3c-41e4-ab3a-8b48033c404e
   udp: true
   tls: true
   skip-cert-verify: true
-  servername: rAyAn-007.mAxImA.DpDnS.OrG
-  network: ws
-  ws-opts:
-    path: /?ed=2560
-    headers:
-      Host: rAyAn-007.mAxImA.DpDnS.OrG
+  reality-opts:
+    public-key: g63cT3uI0Y5iUtj3m__RYz7nmR1eIK4AYikdnZCl63w
+  servername: www.apple.com
+  client-fingerprint: chrome
 proxy-groups:
 - name: PROXIES
   type: select
@@ -133,9 +109,6 @@ proxy-groups:
   - 🇫🇷 法国 (France) 05 - xiaohe
   - 🇫🇷 法国 (France) 06 - xiaohe
   - 🇫🇷 法国 (France) 07 - xiaohe
-  - 🇫🇷 法国 (France) 08 - xiaohe
-  - 🇫🇷 法国 (France) 09 - xiaohe
-  - 🇫🇷 法国 (France) 10 - xiaohe
 - name: AUTO
   type: url-test
   url: https://www.google.com/generate_204
@@ -148,8 +121,5 @@ proxy-groups:
   - 🇫🇷 法国 (France) 05 - xiaohe
   - 🇫🇷 法国 (France) 06 - xiaohe
   - 🇫🇷 法国 (France) 07 - xiaohe
-  - 🇫🇷 法国 (France) 08 - xiaohe
-  - 🇫🇷 法国 (France) 09 - xiaohe
-  - 🇫🇷 法国 (France) 10 - xiaohe
 rules:
 - MATCH,PROXIES
