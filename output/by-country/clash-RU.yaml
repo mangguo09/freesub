@@ -6,25 +6,32 @@ log-level: info
 proxies:
 - name: 🇷🇺 俄罗斯 (Russia) 01 - xiaohe
   type: ss
-  server: 130.49.189.158
-  port: 43558
-  cipher: chacha20-ietf-poly1305
-  password: /QFycb02d87cByC9+5ZRSygI1avHiPXkgYG2yc+TnGA=
+  server: 176.32.35.44
+  port: 50111
+  cipher: aes-256-gcm
+  password: 6b39ae3234dfd68b
   udp: true
 - name: 🇷🇺 俄罗斯 (Russia) 02 - xiaohe
   type: vless
   server: 46.8.200.91
   port: 443
-  uuid: 0a2dde28-70da-4863-a06f-35d007d94d35
+  uuid: b8201bab-fa6c-4f6e-b289-b5da660c6f69
   udp: true
   tls: true
   skip-cert-verify: true
   servername: cf3.rumedia-cdn.com
   network: ws
   ws-opts:
-    path: /casc
+    path: /cdn/v3/live
     headers:
       Host: cf3.rumedia-cdn.com
+- name: 🇷🇺 俄罗斯 (Russia) 03 - xiaohe
+  type: ss
+  server: 130.49.189.158
+  port: 43558
+  cipher: chacha20-ietf-poly1305
+  password: /QFycb02d87cByC9+5ZRSygI1avHiPXkgYG2yc+TnGA=
+  udp: true
 proxy-groups:
 - name: PROXIES
   type: select
@@ -32,6 +39,7 @@ proxy-groups:
   - AUTO
   - 🇷🇺 俄罗斯 (Russia) 01 - xiaohe
   - 🇷🇺 俄罗斯 (Russia) 02 - xiaohe
+  - 🇷🇺 俄罗斯 (Russia) 03 - xiaohe
 - name: AUTO
   type: url-test
   url: https://www.google.com/generate_204
@@ -39,5 +47,6 @@ proxy-groups:
   proxies:
   - 🇷🇺 俄罗斯 (Russia) 01 - xiaohe
   - 🇷🇺 俄罗斯 (Russia) 02 - xiaohe
+  - 🇷🇺 俄罗斯 (Russia) 03 - xiaohe
 rules:
 - MATCH,PROXIES
