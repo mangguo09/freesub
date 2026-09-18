@@ -34,19 +34,6 @@ proxies:
       Host: fx3h2kf8xn.fx6hsv0.ccwu.cc
 - name: 🇰🇷 韩国 (South Korea) 03 (家宽) - xiaohe
   type: vless
-  server: 172.64.88.251
-  port: 8880
-  uuid: 7e3cd2f1-0de5-4717-9002-64d8597bc577
-  udp: true
-  tls: false
-  skip-cert-verify: true
-  network: ws
-  ws-opts:
-    path: /pyip=ProxyIP.KR.CMLiussss.net
-    headers:
-      Host: dry-credit-fc26.203-d8c.workers.dev
-- name: 🇰🇷 韩国 (South Korea) 04 (家宽) - xiaohe
-  type: vless
   server: 104.16.10.185
   port: 443
   uuid: 77777777-8a3e-6666-b6d1-a9c5f0e8b3a2
@@ -59,20 +46,19 @@ proxies:
     path: /?ed=2560
     headers:
       Host: fx3h2kf8xn.fx6hsv0.ccwu.cc
-- name: 🇰🇷 韩国 (South Korea) 05 (家宽) - xiaohe
+- name: 🇰🇷 韩国 (South Korea) 04 (家宽) - xiaohe
   type: vless
-  server: 172.64.52.182
-  port: 2087
-  uuid: 77777777-8a3e-6666-b6d1-a9c5f0e8b3a2
+  server: log.bpminecraft.com
+  port: 8880
+  uuid: 6b89f475-913c-4381-a102-f5e06a129685
   udp: true
-  tls: true
+  tls: false
   skip-cert-verify: true
-  servername: faxf32gkfzoxqv.fx6hsv0.ccwu.cc
   network: ws
   ws-opts:
-    path: ?ed=2560
+    path: /pyip
     headers:
-      Host: faxf32gkfzoxqv.fx6hsv0.ccwu.cc
+      Host: proud-dawn-56f1.125-85b.workers.dev
 proxy-groups:
 - name: PROXIES
   type: select
@@ -82,7 +68,6 @@ proxy-groups:
   - 🇰🇷 韩国 (South Korea) 02 (家宽) - xiaohe
   - 🇰🇷 韩国 (South Korea) 03 (家宽) - xiaohe
   - 🇰🇷 韩国 (South Korea) 04 (家宽) - xiaohe
-  - 🇰🇷 韩国 (South Korea) 05 (家宽) - xiaohe
 - name: AUTO
   type: url-test
   url: https://www.google.com/generate_204
@@ -92,6 +77,5 @@ proxy-groups:
   - 🇰🇷 韩国 (South Korea) 02 (家宽) - xiaohe
   - 🇰🇷 韩国 (South Korea) 03 (家宽) - xiaohe
   - 🇰🇷 韩国 (South Korea) 04 (家宽) - xiaohe
-  - 🇰🇷 韩国 (South Korea) 05 (家宽) - xiaohe
 rules:
 - MATCH,PROXIES

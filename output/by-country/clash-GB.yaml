@@ -19,37 +19,6 @@ proxies:
     headers:
       Host: vlso5.1d.mom
 - name: 🇬🇧 英国 (United Kingdom) 02 - xiaohe
-  type: vmess
-  server: 66.163.117.58
-  port: 22324
-  uuid: 04621bae-ab36-11ec-b909-0242ac120002
-  alterId: 0
-  cipher: auto
-  udp: true
-  tls: false
-  skip-cert-verify: true
-- name: 🇬🇧 英国 (United Kingdom) 03 - xiaohe
-  type: vless
-  server: 109.176.239.123
-  port: 443
-  uuid: 1d16c6e0-1bbe-435b-b661-90043fee999c
-  udp: true
-  tls: true
-  skip-cert-verify: true
-  servername: notls.lukongtou.eu.org
-  network: ws
-  ws-opts:
-    path: /
-    headers:
-      Host: notls.lukongtou.eu.org
-- name: 🇬🇧 英国 (United Kingdom) 04 - xiaohe
-  type: ss
-  server: 141.98.101.181
-  port: 443
-  cipher: aes-128-gcm
-  password: shadowsocks
-  udp: true
-- name: 🇬🇧 英国 (United Kingdom) 05 - xiaohe
   type: vless
   server: 46.250.250.149
   port: 2053
@@ -61,14 +30,28 @@ proxies:
     public-key: hieuCHb3HYdDYHmTDyWw2SGqyfo36AVuA-wSiZMdU1M
   servername: www.apple.com
   client-fingerprint: firefox
-- name: 🇬🇧 英国 (United Kingdom) 06 - xiaohe
-  type: ss
-  server: 129.151.92.18
-  port: 61312
-  cipher: 2022-blake3-chacha20-poly1305
-  password: 4YIk2BAV2AExvYDsQrw4ELlQJP/b4poEXjzFbSXwMao=
+- name: 🇬🇧 英国 (United Kingdom) 03 - xiaohe
+  type: vless
+  server: 91.193.58.117
+  port: 443
+  uuid: 9419f782-b18e-4c4b-ae95-a7a279fd021f
   udp: true
-- name: 🇬🇧 英国 (United Kingdom) 07 - xiaohe
+  tls: true
+  skip-cert-verify: true
+  servername: jamph131-1228.pages.dev
+  network: ws
+  ws-opts:
+    path: Telegram-WangCai2🇨🇳
+    headers:
+      Host: jamph131-1228.pages.dev
+- name: 🇬🇧 英国 (United Kingdom) 04 - xiaohe
+  type: ss
+  server: 149.102.149.207
+  port: 80
+  cipher: aes-256-gcm
+  password: LXchLsIwtCeUAUgu
+  udp: true
+- name: 🇬🇧 英国 (United Kingdom) 05 - xiaohe
   type: vmess
   server: 66.163.117.58
   port: 22324
@@ -78,7 +61,58 @@ proxies:
   udp: true
   tls: false
   skip-cert-verify: true
+- name: 🇬🇧 英国 (United Kingdom) 06 - xiaohe
+  type: ss
+  server: 144.24.225.111
+  port: 61312
+  cipher: 2022-blake3-chacha20-poly1305
+  password: xtHPuZw32Ek7q4odOVXoMn+UY9C/IdokDkolQjvdxrk=
+  udp: true
+- name: 🇬🇧 英国 (United Kingdom) 07 - xiaohe
+  type: vless
+  server: 172.64.149.54
+  port: 443
+  uuid: fe34b5df-e634-4c83-a057-e53f41ce8e27
+  udp: true
+  tls: true
+  skip-cert-verify: true
+  servername: lATE-LaB-d6A2.CIwodA8715.WoRKerS.DeV
+  network: ws
+  ws-opts:
+    path: /eyJqdW5rIjoiQ3dmV1d4OUFQdSIsInByb3RvY29sIjoidmwiLCJtb2RlIjoicHJveHlpcCIsInBhbmVsSVBzIjpbXX0=?ed=2560
+    headers:
+      Host: late-lab-d6a2.ciwoda8715.workers.dev
 - name: 🇬🇧 英国 (United Kingdom) 08 - xiaohe
+  type: vless
+  server: 186.190.211.188
+  port: 443
+  uuid: 03fcc618-b93d-6796-6aed-8a38c975d581
+  udp: true
+  tls: true
+  skip-cert-verify: true
+  servername: 186.190.211.188
+- name: 🇬🇧 英国 (United Kingdom) 09 - xiaohe
+  type: ss
+  server: 149.102.132.184
+  port: 443
+  cipher: aes-256-gcm
+  password: g5h5jleTRSyO3Rk4
+  udp: true
+- name: 🇬🇧 英国 (United Kingdom) 10 - xiaohe
+  type: ss
+  server: 158.173.221.214
+  port: 11001
+  cipher: chacha20-ietf-poly1305
+  password: c58d16e593d44f42
+  udp: true
+- name: 🇬🇧 英国 (United Kingdom) 11 - xiaohe
+  type: ss
+  server: 134.65.61.47
+  port: 61312
+  cipher: 2022-blake3-chacha20-poly1305
+  password: sDhEhHHvZ8tSUziGGDt1rQuh7bgTpUccfw5JnGsAvB4=
+  udp: true
+- name: 🇬🇧 英国 (United Kingdom) 12 - xiaohe
   type: vless
   server: 46.250.250.149
   port: 2053
@@ -90,63 +124,7 @@ proxies:
     public-key: hieuCHb3HYdDYHmTDyWw2SGqyfo36AVuA-wSiZMdU1M
   servername: www.apple.com
   client-fingerprint: random
-- name: 🇬🇧 英国 (United Kingdom) 09 - xiaohe
-  type: vless
-  server: 129.121.95.159
-  port: 443
-  uuid: f6190ff2-864c-46cf-ac16-93908c069b75
-  udp: true
-  tls: true
-  skip-cert-verify: true
-  servername: 129.121.95.159
-  network: ws
-  ws-opts:
-    path: /connect#TELEGRAM-MUSICLOVERS85?ed=512
-    headers:
-      Host: 129.121.95.159
-- name: 🇬🇧 英国 (United Kingdom) 10 - xiaohe
-  type: ss
-  server: 149.102.132.184
-  port: 443
-  cipher: aes-256-gcm
-  password: g5h5jleTRSyO3Rk4
-  udp: true
-- name: 🇬🇧 英国 (United Kingdom) 11 - xiaohe
-  type: vless
-  server: 91.193.58.195
-  port: 443
-  uuid: 9419f782-b18e-4c4b-ae95-a7a279fd021f
-  udp: true
-  tls: true
-  skip-cert-verify: true
-  servername: jamph131-1228.pages.dev
-  network: ws
-  ws-opts:
-    path: Telegram-WangCai2🇨🇳
-    headers:
-      Host: jamph131-1228.pages.dev
-- name: 🇬🇧 英国 (United Kingdom) 12 - xiaohe
-  type: vless
-  server: 185.193.29.123
-  port: 443
-  uuid: 1d16c6e0-1bbe-435b-b661-90043fee999c
-  udp: true
-  tls: true
-  skip-cert-verify: true
-  servername: notls.lukongtou.eu.org
-  network: ws
-  ws-opts:
-    path: Telegram-WangCai2🇨🇳
-    headers:
-      Host: notls.lukongtou.eu.org
 - name: 🇬🇧 英国 (United Kingdom) 13 - xiaohe
-  type: ss
-  server: 129.151.91.115
-  port: 61312
-  cipher: 2022-blake3-chacha20-poly1305
-  password: ktsunSg4AnlcqH3JiVv7JWSHpbDjDfTvldDgDpApNHw=
-  udp: true
-- name: 🇬🇧 英国 (United Kingdom) 14 - xiaohe
   type: vmess
   server: 66.163.117.58
   port: 22324
@@ -156,42 +134,31 @@ proxies:
   udp: true
   tls: false
   skip-cert-verify: true
-- name: 🇬🇧 英国 (United Kingdom) 15 - xiaohe
+- name: 🇬🇧 英国 (United Kingdom) 14 - xiaohe
   type: ss
-  server: 144.24.225.111
+  server: 51.77.225.200
+  port: 8388
+  cipher: chacha20-ietf-poly1305
+  password: zRZNBszYyWo5
+  udp: true
+- name: 🇬🇧 英国 (United Kingdom) 15 - xiaohe
+  type: vmess
+  server: 66.163.117.58
+  port: 22324
+  uuid: 04621bae-ab36-11ec-b909-0242ac120002
+  alterId: 0
+  cipher: auto
+  udp: true
+  tls: false
+  skip-cert-verify: true
+- name: 🇬🇧 英国 (United Kingdom) 16 - xiaohe
+  type: ss
+  server: 129.151.83.15
   port: 61312
   cipher: 2022-blake3-chacha20-poly1305
-  password: xtHPuZw32Ek7q4odOVXoMn+UY9C/IdokDkolQjvdxrk=
+  password: 4HcH2eAbURZ4IN8H4EAgnOWL2suzf7iTJTogK+3MB1o=
   udp: true
-- name: 🇬🇧 英国 (United Kingdom) 16 - xiaohe
-  type: vless
-  server: 185.170.166.123
-  port: 443
-  uuid: 1d16c6e0-1bbe-435b-b661-90043fee999c
-  udp: true
-  tls: true
-  skip-cert-verify: true
-  servername: notls.lukongtou.eu.org
-  network: ws
-  ws-opts:
-    path: /
-    headers:
-      Host: notls.lukongtou.eu.org
 - name: 🇬🇧 英国 (United Kingdom) 17 - xiaohe
-  type: vless
-  server: 91.193.58.93
-  port: 443
-  uuid: 9419f782-b18e-4c4b-ae95-a7a279fd021f
-  udp: true
-  tls: true
-  skip-cert-verify: true
-  servername: jamph131-1228.pages.dev
-  network: ws
-  ws-opts:
-    path: Telegram-WangCai2🇨🇳
-    headers:
-      Host: jamph131-1228.pages.dev
-- name: 🇬🇧 英国 (United Kingdom) 18 - xiaohe
   type: vless
   server: 91.193.58.141
   port: 443
@@ -205,30 +172,69 @@ proxies:
     path: Telegram-WangCai2🇨🇳
     headers:
       Host: jamph131-1228.pages.dev
+- name: 🇬🇧 英国 (United Kingdom) 18 - xiaohe
+  type: ss
+  server: 144.24.226.249
+  port: 61312
+  cipher: 2022-blake3-chacha20-poly1305
+  password: axZ54YHizH8C2/85gqPV+VCC6r0h+nWWGemeypymi2I=
+  udp: true
 - name: 🇬🇧 英国 (United Kingdom) 19 - xiaohe
   type: vless
-  server: 185.193.28.123
+  server: 129.121.95.159
   port: 443
-  uuid: 1d16c6e0-1bbe-435b-b661-90043fee999c
+  uuid: f6190ff2-864c-46cf-ac16-93908c069b75
   udp: true
   tls: true
   skip-cert-verify: true
-  servername: notls.lukongtou.eu.org
+  servername: 129.121.95.159
   network: ws
   ws-opts:
-    path: /
+    path: /connect#TELEGRAM-MUSICLOVERS85?ed=512
     headers:
-      Host: notls.lukongtou.eu.org
+      Host: 129.121.95.159
 - name: 🇬🇧 英国 (United Kingdom) 20 - xiaohe
   type: vless
-  server: 186.190.211.188
+  server: 91.193.58.93
   port: 443
-  uuid: 03fcc618-b93d-6796-6aed-8a38c975d581
+  uuid: 9419f782-b18e-4c4b-ae95-a7a279fd021f
   udp: true
   tls: true
   skip-cert-verify: true
-  servername: 186.190.211.188
+  servername: jamph131-1228.pages.dev
+  network: ws
+  ws-opts:
+    path: Telegram-WangCai2🇨🇳
+    headers:
+      Host: jamph131-1228.pages.dev
 - name: 🇬🇧 英国 (United Kingdom) 21 - xiaohe
+  type: vmess
+  server: 66.163.117.58
+  port: 22324
+  uuid: 04621bae-ab36-11ec-b909-0242ac120002
+  alterId: 0
+  cipher: auto
+  udp: true
+  tls: false
+  skip-cert-verify: true
+- name: 🇬🇧 英国 (United Kingdom) 22 - xiaohe
+  type: vmess
+  server: 66.163.117.58
+  port: 22324
+  uuid: 04621bae-ab36-11ec-b909-0242ac120002
+  alterId: 0
+  cipher: auto
+  udp: true
+  tls: false
+  skip-cert-verify: true
+- name: 🇬🇧 英国 (United Kingdom) 23 - xiaohe
+  type: ss
+  server: 129.151.73.188
+  port: 61312
+  cipher: 2022-blake3-chacha20-poly1305
+  password: XXq8087l/F/17nlKDoxF5yHMha+CZIJKCj0UwWf0wRA=
+  udp: true
+- name: 🇬🇧 英国 (United Kingdom) 24 - xiaohe
   type: vmess
   server: 57.129.132.223
   port: 80
@@ -243,47 +249,34 @@ proxies:
     path: /vmess/
     headers:
       Host: google.com
-- name: 🇬🇧 英国 (United Kingdom) 22 - xiaohe
-  type: vless
-  server: 91.193.58.117
+- name: 🇬🇧 英国 (United Kingdom) 25 - xiaohe
+  type: ss
+  server: 129.151.74.18
+  port: 61312
+  cipher: 2022-blake3-chacha20-poly1305
+  password: aCeLrNSmYv7M5d0iQTHHhbKVY6Gymx+Tl40NWmuBpEI=
+  udp: true
+- name: 🇬🇧 英国 (United Kingdom) 26 - xiaohe
+  type: ss
+  server: 149.102.149.207
   port: 443
-  uuid: 9419f782-b18e-4c4b-ae95-a7a279fd021f
+  cipher: aes-256-gcm
+  password: LXchLsIwtCeUAUgu
   udp: true
-  tls: true
-  skip-cert-verify: true
-  servername: jamph131-1228.pages.dev
-  network: ws
-  ws-opts:
-    path: Telegram-WangCai2🇨🇳
-    headers:
-      Host: jamph131-1228.pages.dev
-- name: 🇬🇧 英国 (United Kingdom) 23 - xiaohe
-  type: vless
-  server: 172.66.47.45
+- name: 🇬🇧 英国 (United Kingdom) 27 - xiaohe
+  type: ss
+  server: 149.102.132.184
+  port: 80
+  cipher: aes-256-gcm
+  password: g5h5jleTRSyO3Rk4
+  udp: true
+- name: 🇬🇧 英国 (United Kingdom) 28 - xiaohe
+  type: ss
+  server: 141.98.101.181
   port: 443
-  uuid: e56059f1-5a1a-4d0a-a2d0-58ecb4eb2f3f
+  cipher: aes-128-gcm
+  password: shadowsocks
   udp: true
-  tls: true
-  skip-cert-verify: true
-  servername: EZAcCESS-pROjECt-F62c30.PAGES.dEv
-  network: ws
-  ws-opts:
-    path: /eyJqdW5rIjoiZWlPODVjTnhnaSIsInByb3RvY29sIjoidmwiLCJtb2RlIjoicHJveHlpcCIsInBhbmVsSVBzIjpbXX0=
-    headers:
-      Host: ezaccess-project-f62c30.pages.dev
-- name: 🇬🇧 英国 (United Kingdom) 24 - xiaohe
-  type: vless
-  server: 104.21.70.21
-  port: 8080
-  uuid: b69b43d1-091d-4d7c-90b2-7a8bbad9d6a9
-  udp: true
-  tls: false
-  skip-cert-verify: true
-  network: ws
-  ws-opts:
-    path: /eyJqdW5rIjoiY0U2T212Y21yeEhUZHRKYSIsInByb3RvY29sIjoidmwiLCJtb2RlIjoicHJveHlpcCIsInBhbmVsSVBzIjpbXX0
-    headers:
-      Host: bitter-credit-61b8.b76eba0abb.workers.dev
 proxy-groups:
 - name: PROXIES
   type: select
@@ -313,6 +306,10 @@ proxy-groups:
   - 🇬🇧 英国 (United Kingdom) 22 - xiaohe
   - 🇬🇧 英国 (United Kingdom) 23 - xiaohe
   - 🇬🇧 英国 (United Kingdom) 24 - xiaohe
+  - 🇬🇧 英国 (United Kingdom) 25 - xiaohe
+  - 🇬🇧 英国 (United Kingdom) 26 - xiaohe
+  - 🇬🇧 英国 (United Kingdom) 27 - xiaohe
+  - 🇬🇧 英国 (United Kingdom) 28 - xiaohe
 - name: AUTO
   type: url-test
   url: https://www.google.com/generate_204
@@ -342,5 +339,9 @@ proxy-groups:
   - 🇬🇧 英国 (United Kingdom) 22 - xiaohe
   - 🇬🇧 英国 (United Kingdom) 23 - xiaohe
   - 🇬🇧 英国 (United Kingdom) 24 - xiaohe
+  - 🇬🇧 英国 (United Kingdom) 25 - xiaohe
+  - 🇬🇧 英国 (United Kingdom) 26 - xiaohe
+  - 🇬🇧 英国 (United Kingdom) 27 - xiaohe
+  - 🇬🇧 英国 (United Kingdom) 28 - xiaohe
 rules:
 - MATCH,PROXIES
