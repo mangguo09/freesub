@@ -5,23 +5,71 @@ mode: rule
 log-level: info
 proxies:
 - name: 🇵🇱 PL 01 - xiaohe
+  type: vless
+  server: 104.24.31.89
+  port: 443
+  uuid: aebe5a70-0ca3-46ce-8208-8b5bab1346ce
+  udp: true
+  tls: true
+  skip-cert-verify: true
+  servername: rAyAn-007.nAsTaRaN.DpDnS.OrG
+  network: ws
+  ws-opts:
+    path: /?ed=2560
+    headers:
+      Host: rayan-007.nastaran.dpdns.org
+- name: 🇵🇱 PL 02 - xiaohe
   type: ss
   server: 194.61.121.93
   port: 7538
   cipher: chacha20-ietf-poly1305
   password: U9YAoqBgg5VyGBc6vQv1sN
   udp: true
+- name: 🇵🇱 PL 03 - xiaohe
+  type: vless
+  server: 172.67.67.178
+  port: 443
+  uuid: aebe5a70-0ca3-46ce-8208-8b5bab1346ce
+  udp: true
+  tls: true
+  skip-cert-verify: true
+  servername: rAyAn-007.nAsTaRaN.DpDnS.OrG
+  network: ws
+  ws-opts:
+    path: /?ed=2560
+    headers:
+      Host: rayan-007.nastaran.dpdns.org
+- name: 🇵🇱 PL 04 - xiaohe
+  type: vless
+  server: 104.17.247.68
+  port: 443
+  uuid: e6cc4788-3c45-4df1-94f3-8303504a65bf
+  udp: true
+  tls: true
+  skip-cert-verify: true
+  servername: khoda.ak-khoda.workers.dev
+  network: ws
+  ws-opts:
+    path: /sync
+    headers:
+      Host: khoda.ak-khoda.workers.dev
 proxy-groups:
 - name: PROXIES
   type: select
   proxies:
   - AUTO
   - 🇵🇱 PL 01 - xiaohe
+  - 🇵🇱 PL 02 - xiaohe
+  - 🇵🇱 PL 03 - xiaohe
+  - 🇵🇱 PL 04 - xiaohe
 - name: AUTO
   type: url-test
   url: https://www.google.com/generate_204
   interval: 300
   proxies:
   - 🇵🇱 PL 01 - xiaohe
+  - 🇵🇱 PL 02 - xiaohe
+  - 🇵🇱 PL 03 - xiaohe
+  - 🇵🇱 PL 04 - xiaohe
 rules:
 - MATCH,PROXIES

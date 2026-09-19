@@ -11,17 +11,41 @@ proxies:
   cipher: chacha20-ietf-poly1305
   password: LB2J8MvTt2SBgD6o
   udp: true
+- name: 🇮🇪 IE 02 - xiaohe
+  type: ss
+  server: 20.238.35.153
+  port: 443
+  cipher: chacha20-ietf-poly1305
+  password: LB2J8MvTt2SBgD6o
+  udp: true
+- name: 🇮🇪 IE 03 - xiaohe
+  type: vless
+  server: 154.197.75.40
+  port: 8880
+  uuid: 6202b230-417c-4d8e-b624-0f71afa9c75d
+  udp: true
+  tls: false
+  skip-cert-verify: true
+  network: ws
+  ws-opts:
+    path: /
+    headers:
+      Host: vms.lifetime37.workers.dev
 proxy-groups:
 - name: PROXIES
   type: select
   proxies:
   - AUTO
   - 🇮🇪 IE 01 - xiaohe
+  - 🇮🇪 IE 02 - xiaohe
+  - 🇮🇪 IE 03 - xiaohe
 - name: AUTO
   type: url-test
   url: https://www.google.com/generate_204
   interval: 300
   proxies:
   - 🇮🇪 IE 01 - xiaohe
+  - 🇮🇪 IE 02 - xiaohe
+  - 🇮🇪 IE 03 - xiaohe
 rules:
 - MATCH,PROXIES
