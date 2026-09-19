@@ -5,19 +5,15 @@ mode: rule
 log-level: info
 proxies:
 - name: 🇲🇾 MY 01 - xiaohe
-  type: vless
-  server: 149.118.144.163
-  port: 443
-  uuid: 428e3a9c-7ba6-4268-ae43-91c0e5b8d677
+  type: vmess
+  server: 45.127.5.132
+  port: 2083
+  uuid: f3a7aea1-0f5a-4ed0-8a50-f6e7a78bed3c
+  alterId: 0
+  cipher: auto
   udp: true
-  tls: true
+  tls: false
   skip-cert-verify: true
-  servername: cf.zxs1202.cc.cd
-  network: ws
-  ws-opts:
-    path: /?ed=2048
-    headers:
-      Host: cf.zxs1202.cc.cd
 proxy-groups:
 - name: PROXIES
   type: select
