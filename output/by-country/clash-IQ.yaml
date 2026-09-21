@@ -6,39 +6,29 @@ log-level: info
 proxies:
 - name: 🇮🇶 IQ 01 - xiaohe
   type: vless
-  server: 81.90.25.152
-  port: 34302
-  uuid: e9a7f2c2-51bd-4a81-de35-26b369e2585b
-  udp: true
-  tls: false
-  skip-cert-verify: true
-- name: 🇮🇶 IQ 02 - xiaohe
-  type: vless
-  server: 104.21.3.133
-  port: 2083
-  uuid: 2b8738de-1af5-4267-b101-c05707769ed4
+  server: 104.21.8.63
+  port: 443
+  uuid: b19419fa-8009-455b-b059-765e2856883a
   udp: true
   tls: true
   skip-cert-verify: true
-  servername: fans.liverpool.qzz.io
+  servername: akbarian34.j9z65ce2uyks.workers.dev
   network: ws
   ws-opts:
-    path: /eyJqdW5rIjoiY0Y0cENQUmxsNyIsInByb3RvY29sIjoidmwiLCJtb2RlIjoicHJveHlpcCIsInBhbmVsSVBzIjpbXX0=
+    path: /vl/Q5xRgb8wfW3RTYFIfDA16PzboJrjLuZ9?ed=2560
     headers:
-      Host: fans.liverpool.qzz.io
+      Host: akbarian34.j9z65ce2uyks.workers.dev
 proxy-groups:
 - name: PROXIES
   type: select
   proxies:
   - AUTO
   - 🇮🇶 IQ 01 - xiaohe
-  - 🇮🇶 IQ 02 - xiaohe
 - name: AUTO
   type: url-test
   url: https://www.google.com/generate_204
   interval: 300
   proxies:
   - 🇮🇶 IQ 01 - xiaohe
-  - 🇮🇶 IQ 02 - xiaohe
 rules:
 - MATCH,PROXIES

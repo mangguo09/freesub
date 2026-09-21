@@ -4,31 +4,31 @@ allow-lan: true
 mode: rule
 log-level: info
 proxies:
-- name: 🇺🇿 UZ 01 - xiaohe
+- name: 🇱🇻 LV 01 - xiaohe
   type: vless
-  server: 104.18.80.149
+  server: 104.25.217.189
   port: 443
-  uuid: 50414e45-4c5f-5a45-5553-4017ea8bea78
+  uuid: 7a657573-627d-c5d7-4e7b-9e260f5cfff1
   udp: true
   tls: true
   skip-cert-verify: true
-  servername: zeus-panel-mvtum1.mahdiharchegani.workers.dev
+  servername: imzajnekupas.a3-60-morteza.workers.dev
   network: ws
   ws-opts:
-    path: /stream/PANEL_ZEUS/4017ea8bea78/loc-4
+    path: /stream/PANEL_ZEUS/9e260f5cfff1/loc-0
     headers:
-      Host: zeus-panel-mvtum1.mahdiharchegani.workers.dev
+      Host: imzajnekupas.a3-60-morteza.workers.dev
 proxy-groups:
 - name: PROXIES
   type: select
   proxies:
   - AUTO
-  - 🇺🇿 UZ 01 - xiaohe
+  - 🇱🇻 LV 01 - xiaohe
 - name: AUTO
   type: url-test
   url: https://www.google.com/generate_204
   interval: 300
   proxies:
-  - 🇺🇿 UZ 01 - xiaohe
+  - 🇱🇻 LV 01 - xiaohe
 rules:
 - MATCH,PROXIES
