@@ -6,44 +6,6 @@ log-level: info
 proxies:
 - name: 🇧🇷 BR 01 - xiaohe
   type: vless
-  server: 157.151.4.93
-  port: 443
-  uuid: c18b978e-1c4e-415c-8bea-07942b563a64
-  udp: true
-  tls: true
-  skip-cert-verify: true
-  servername: shuma.ccwu.cc
-  network: ws
-  ws-opts:
-    path: /fp=chrome
-    headers:
-      Host: shuma.ccwu.cc
-- name: 🇧🇷 BR 02 - xiaohe
-  type: vless
-  server: 35.199.90.53
-  port: 443
-  uuid: e9c2ed7f-79ab-40a8-8910-24468f5da712
-  udp: true
-  tls: true
-  skip-cert-verify: true
-  reality-opts:
-    public-key: 0WXz3PJQnr-KprrwiO5BlKVRdqA4ZS6U5jGHc_aeJnw
-  servername: www.cloudflare.com
-  client-fingerprint: chrome
-- name: 🇧🇷 BR 03 - xiaohe
-  type: vless
-  server: 35.199.90.53
-  port: 443
-  uuid: e9c2ed7f-79ab-40a8-8910-24468f5da712
-  udp: true
-  tls: true
-  skip-cert-verify: true
-  reality-opts:
-    public-key: 0WXz3PJQnr-KprrwiO5BlKVRdqA4ZS6U5jGHc_aeJnw
-  servername: www.cloudflare.com
-  client-fingerprint: ios
-- name: 🇧🇷 BR 04 - xiaohe
-  type: vless
   server: 35.199.90.53
   port: 443
   uuid: e9c2ed7f-79ab-40a8-8910-24468f5da712
@@ -60,17 +22,11 @@ proxy-groups:
   proxies:
   - AUTO
   - 🇧🇷 BR 01 - xiaohe
-  - 🇧🇷 BR 02 - xiaohe
-  - 🇧🇷 BR 03 - xiaohe
-  - 🇧🇷 BR 04 - xiaohe
 - name: AUTO
   type: url-test
   url: https://www.google.com/generate_204
   interval: 300
   proxies:
   - 🇧🇷 BR 01 - xiaohe
-  - 🇧🇷 BR 02 - xiaohe
-  - 🇧🇷 BR 03 - xiaohe
-  - 🇧🇷 BR 04 - xiaohe
 rules:
 - MATCH,PROXIES

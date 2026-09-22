@@ -20,18 +20,18 @@ proxies:
       Host: r5zenrelur2s.pqzdileiu8es.workers.dev
 - name: 🇺🇿 UZ 02 - xiaohe
   type: vless
-  server: 172.67.210.146
+  server: 104.18.80.149
   port: 443
-  uuid: 50414e45-4c5f-5a45-5553-4eef5adc237a
+  uuid: 50414e45-4c5f-5a45-5553-4017ea8bea78
   udp: true
   tls: true
   skip-cert-verify: true
-  servername: r5zenrelur2s.pqzdileiu8es.workers.dev
+  servername: zeus-panel-mvtum1.mahdiharchegani.workers.dev
   network: ws
   ws-opts:
-    path: /stream/PANEL_ZEUS/4eef5adc237a/loc-1
+    path: /stream/PANEL_ZEUS/4017ea8bea78/loc-4
     headers:
-      Host: r5zenrelur2s.pqzdileiu8es.workers.dev
+      Host: zeus-panel-mvtum1.mahdiharchegani.workers.dev
 - name: 🇺🇿 UZ 03 - xiaohe
   type: vless
   server: 104.24.143.217
