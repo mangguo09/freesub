@@ -6,10 +6,10 @@ log-level: info
 proxies:
 - name: 🇿🇦 ZA 01 - xiaohe
   type: ss
-  server: 102.133.165.160
-  port: 16233
+  server: 4.221.224.246
+  port: 443
   cipher: chacha20-ietf-poly1305
-  password: Xsy8Ox4yOV3xLlpxtjzs3X
+  password: 3aN9XUwhvq1ujlsO
   udp: true
 proxy-groups:
 - name: PROXIES

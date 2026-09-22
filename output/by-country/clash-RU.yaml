@@ -6,33 +6,19 @@ log-level: info
 proxies:
 - name: 🇷🇺 俄罗斯 (Russia) 01 - xiaohe
   type: vless
-  server: 157.173.125.214
-  port: 2087
-  uuid: d342d11e-d424-4583-b36e-524ab1f0afa4
-  udp: true
-  tls: true
-  skip-cert-verify: true
-  servername: cdn8848.776676.xyz
-  network: ws
-  ws-opts:
-    path: '%2Fredirect%2Fchina%2Fview%3Fed%3D2560'
-    headers:
-      Host: cdn8848.776676.xyz
-- name: 🇷🇺 俄罗斯 (Russia) 02 - xiaohe
-  type: vless
-  server: 188.166.49.168
+  server: 66.81.247.155
   port: 2083
-  uuid: d342d11e-d424-4583-b36e-524ab1f0afa4
+  uuid: 6cc29a05-4828-4e48-a34a-20b7ada60e85
   udp: true
   tls: true
   skip-cert-verify: true
-  servername: cdn8848.776676.xyz
+  servername: testmikonim.hydrymhmdamyn7.workers.dev
   network: ws
   ws-opts:
-    path: /
+    path: /OAZko425kNFF0PpQ
     headers:
-      Host: cdn8848.776676.xyz
-- name: 🇷🇺 俄罗斯 (Russia) 03 - xiaohe
+      Host: testmikonim.hydrymhmdamyn7.workers.dev
+- name: 🇷🇺 俄罗斯 (Russia) 02 - xiaohe
   type: vless
   server: 46.8.200.91
   port: 443
@@ -46,34 +32,6 @@ proxies:
     path: /cdn/v3/live
     headers:
       Host: cf3.rumedia-cdn.com
-- name: 🇷🇺 俄罗斯 (Russia) 04 - xiaohe
-  type: vless
-  server: 31.59.46.140
-  port: 8443
-  uuid: d342d11e-d424-4583-b36e-524ab1f0afa4
-  udp: true
-  tls: true
-  skip-cert-verify: true
-  servername: cdn8848.776676.xyz
-  network: ws
-  ws-opts:
-    path: '%2Ftravel%2Fintro%3Fed%3D2560'
-    headers:
-      Host: cdn8848.776676.xyz
-- name: 🇷🇺 俄罗斯 (Russia) 05 - xiaohe
-  type: vless
-  server: 103.31.77.108
-  port: 2053
-  uuid: d342d11e-d424-4583-b36e-524ab1f0afa4
-  udp: true
-  tls: true
-  skip-cert-verify: true
-  servername: cdn8848.776676.xyz
-  network: ws
-  ws-opts:
-    path: /channels/act
-    headers:
-      Host: cdn8848.776676.xyz
 proxy-groups:
 - name: PROXIES
   type: select
@@ -81,9 +39,6 @@ proxy-groups:
   - AUTO
   - 🇷🇺 俄罗斯 (Russia) 01 - xiaohe
   - 🇷🇺 俄罗斯 (Russia) 02 - xiaohe
-  - 🇷🇺 俄罗斯 (Russia) 03 - xiaohe
-  - 🇷🇺 俄罗斯 (Russia) 04 - xiaohe
-  - 🇷🇺 俄罗斯 (Russia) 05 - xiaohe
 - name: AUTO
   type: url-test
   url: https://www.google.com/generate_204
@@ -91,8 +46,5 @@ proxy-groups:
   proxies:
   - 🇷🇺 俄罗斯 (Russia) 01 - xiaohe
   - 🇷🇺 俄罗斯 (Russia) 02 - xiaohe
-  - 🇷🇺 俄罗斯 (Russia) 03 - xiaohe
-  - 🇷🇺 俄罗斯 (Russia) 04 - xiaohe
-  - 🇷🇺 俄罗斯 (Russia) 05 - xiaohe
 rules:
 - MATCH,PROXIES

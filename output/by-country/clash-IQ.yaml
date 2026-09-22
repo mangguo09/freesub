@@ -4,31 +4,31 @@ allow-lan: true
 mode: rule
 log-level: info
 proxies:
-- name: 🇻🇳 VN 01 - xiaohe
+- name: 🇮🇶 IQ 01 - xiaohe
   type: vless
-  server: 160.25.75.40
+  server: 104.21.96.1
   port: 443
-  uuid: d342d11e-d424-4583-b36e-524ab1f0afa4
+  uuid: 0836463b-214f-4af6-aa85-85a56a62388e
   udp: true
   tls: true
   skip-cert-verify: true
-  servername: cdn8848.776676.xyz
+  servername: d2127a49-flat-wood-c4b5.milia-akbarpoor.workers.dev
   network: ws
   ws-opts:
-    path: /
+    path: /?TELEGRAM--MARAMBASHI--MARAMBASHI?ed=512
     headers:
-      Host: cdn8848.776676.xyz
+      Host: d2127a49-flat-wood-c4b5.milia-akbarpoor.workers.dev
 proxy-groups:
 - name: PROXIES
   type: select
   proxies:
   - AUTO
-  - 🇻🇳 VN 01 - xiaohe
+  - 🇮🇶 IQ 01 - xiaohe
 - name: AUTO
   type: url-test
   url: https://www.google.com/generate_204
   interval: 300
   proxies:
-  - 🇻🇳 VN 01 - xiaohe
+  - 🇮🇶 IQ 01 - xiaohe
 rules:
 - MATCH,PROXIES
