@@ -6,18 +6,18 @@ log-level: info
 proxies:
 - name: 🇨🇿 CZ 01 - xiaohe
   type: vless
-  server: 103.200.28.113
-  port: 8443
-  uuid: c18b978e-1c4e-415c-8bea-07942b563a64
+  server: 104.21.8.63
+  port: 443
+  uuid: b19419fa-8009-455b-b059-765e2856883a
   udp: true
   tls: true
   skip-cert-verify: true
-  servername: shuma.ccwu.cc
+  servername: akbarian34.j9z65ce2uyks.workers.dev
   network: ws
   ws-opts:
-    path: /
+    path: /vl/Q5xRgb8wfW3RTYFIfDA16PzboJrjLuZ9?ed=2560
     headers:
-      Host: shuma.ccwu.cc
+      Host: akbarian34.j9z65ce2uyks.workers.dev
 proxy-groups:
 - name: PROXIES
   type: select
