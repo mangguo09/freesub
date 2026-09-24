@@ -34,20 +34,6 @@ proxies:
       Host: netlivpn5505.ffffdsaaa.workers.dev
 - name: 🇨🇭 CH 03 - xiaohe
   type: vless
-  server: 185.18.250.245
-  port: 443
-  uuid: f77299ea-e13d-417d-8cdc-ce5566dfc94b
-  udp: true
-  tls: true
-  skip-cert-verify: true
-  servername: edu.ruangguru.com.r3xxe.eu.cc
-  network: ws
-  ws-opts:
-    path: /nl-tw
-    headers:
-      Host: edu.ruangguru.com.r3xxe.eu.cc
-- name: 🇨🇭 CH 04 - xiaohe
-  type: vless
   server: 188.114.97.6
   port: 8080
   uuid: bd9ff08b-d042-3650-48e4-c4b400000000
@@ -59,20 +45,6 @@ proxies:
     path: /NetliVPN-NetliVPN-NetliVPN-NetliVPN-NetliVPN-NetliVPN-NetliVPN-NetliVPN-NetliVPN-NetliVPN-NetliVPN-NetliVPN-NetliVPN-NetliVPN-NetliVPN-NetliVPN-NetliVPN-NetliVPN-NetliVPN-NetliVPN-NetliVPN-NetliVPN-NetliVPN-NetliVPN-NetliVPN-NetliVPN-NetliVPN-NetliVPN-NetliVPN-NetliVPN-NetliVPN-NetliVPN-NetliVPN-NetliVPN-NetliVPN-NetliVPN-NetliVPN-NetliVPN-NetliVPN-NetliVPN-NetliVPN
     headers:
       Host: netlivpn2950.bbxff.workers.dev
-- name: 🇨🇭 CH 05 - xiaohe
-  type: vless
-  server: 185.18.250.252
-  port: 443
-  uuid: f77299ea-e13d-417d-8cdc-ce5566dfc94b
-  udp: true
-  tls: true
-  skip-cert-verify: true
-  servername: edu.ruangguru.com.r3xxe.eu.cc
-  network: ws
-  ws-opts:
-    path: /nl-tw
-    headers:
-      Host: edu.ruangguru.com.r3xxe.eu.cc
 proxy-groups:
 - name: PROXIES
   type: select
@@ -81,8 +53,6 @@ proxy-groups:
   - 🇨🇭 CH 01 - xiaohe
   - 🇨🇭 CH 02 - xiaohe
   - 🇨🇭 CH 03 - xiaohe
-  - 🇨🇭 CH 04 - xiaohe
-  - 🇨🇭 CH 05 - xiaohe
 - name: AUTO
   type: url-test
   url: https://www.google.com/generate_204
@@ -91,7 +61,5 @@ proxy-groups:
   - 🇨🇭 CH 01 - xiaohe
   - 🇨🇭 CH 02 - xiaohe
   - 🇨🇭 CH 03 - xiaohe
-  - 🇨🇭 CH 04 - xiaohe
-  - 🇨🇭 CH 05 - xiaohe
 rules:
 - MATCH,PROXIES
