@@ -20,18 +20,18 @@ proxies:
       Host: dry-butterfly-8eb9.tmpgnacio83.workers.dev
 - name: 🇦🇺 澳大利亚 (Australia) 02 - xiaohe
   type: vless
-  server: 104.18.155.229
+  server: 208.103.161.5
   port: 443
-  uuid: 42026ed0-7d74-4585-8e46-0fe6aa4d665a
+  uuid: d042a74a-c305-4eec-a89f-39a348022c92
   udp: true
   tls: true
   skip-cert-verify: true
-  servername: www.genflix.co.id.r3xxe.eu.cc
+  servername: dry-butterfly-8eb9.tmpgnacio83.workers.dev
   network: ws
   ws-opts:
-    path: /au-do
+    path: /
     headers:
-      Host: www.genflix.co.id.r3xxe.eu.cc
+      Host: dry-butterfly-8eb9.tmpgnacio83.workers.dev
 proxy-groups:
 - name: PROXIES
   type: select
