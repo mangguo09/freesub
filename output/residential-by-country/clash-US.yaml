@@ -6,17 +6,18 @@ log-level: info
 proxies:
 - name: 🇺🇸 美国 (United States) 01 (家宽) - xiaohe
   type: vless
-  server: 172.64.42.85
-  port: 2052
-  uuid: 47fcef29-ab4e-4aa6-932b-d95a18f28a4e
+  server: 162.159.91.222
+  port: 443
+  uuid: 50414e45-4c5f-5a45-5553-723a643df685
   udp: true
-  tls: false
+  tls: true
   skip-cert-verify: true
+  servername: n3zaxce7u0es.crzl48eiuses.workers.dev
   network: ws
   ws-opts:
-    path: /?ed=2560security=tls
+    path: /stream/PANEL_ZEUS/723a643df685/loc-0
     headers:
-      Host: 8nj2r.2k8t.f88.hh.vavava.kdns.fr
+      Host: n3zaxce7u0es.crzl48eiuses.workers.dev
 proxy-groups:
 - name: PROXIES
   type: select
