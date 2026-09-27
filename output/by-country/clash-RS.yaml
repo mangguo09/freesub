@@ -4,9 +4,9 @@ allow-lan: true
 mode: rule
 log-level: info
 proxies:
-- name: 🇰🇷 韩国 (South Korea) 01 (家宽) - xiaohe
+- name: 🇷🇸 RS 01 - xiaohe
   type: vless
-  server: cf.877774.xyz
+  server: 38.180.100.80
   port: 443
   uuid: 97532b08-357e-4140-a6f0-8e07f2ed3327
   udp: true
@@ -23,12 +23,12 @@ proxy-groups:
   type: select
   proxies:
   - AUTO
-  - 🇰🇷 韩国 (South Korea) 01 (家宽) - xiaohe
+  - 🇷🇸 RS 01 - xiaohe
 - name: AUTO
   type: url-test
   url: https://www.google.com/generate_204
   interval: 300
   proxies:
-  - 🇰🇷 韩国 (South Korea) 01 (家宽) - xiaohe
+  - 🇷🇸 RS 01 - xiaohe
 rules:
 - MATCH,PROXIES
