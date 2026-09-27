@@ -9,7 +9,7 @@ proxies:
   server: 20.234.96.89
   port: 443
   cipher: chacha20-ietf-poly1305
-  password: V3WiGKNQiqOCsT60
+  password: C8QhmBLJzhKo2JHR
   udp: true
 - name: 🇮🇪 IE 02 - xiaohe
   type: ss
@@ -30,7 +30,7 @@ proxies:
   server: 20.234.96.89
   port: 443
   cipher: chacha20-ietf-poly1305
-  password: C8QhmBLJzhKo2JHR
+  password: V3WiGKNQiqOCsT60
   udp: true
 proxy-groups:
 - name: PROXIES
