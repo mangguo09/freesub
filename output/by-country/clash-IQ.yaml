@@ -1,0 +1,34 @@
+port: 7890
+socks-port: 7891
+allow-lan: true
+mode: rule
+log-level: info
+proxies:
+- name: 🇮🇶 IQ 01 - xiaohe
+  type: vless
+  server: fpoixf69hqt3e6d4urtb.mamadneizeh.workers.dev
+  port: 443
+  uuid: 0b41f339-5809-46ef-8351-b03fdc441539
+  udp: true
+  tls: true
+  skip-cert-verify: true
+  servername: FpoiXF69hQT3E6d4URTB.MamADNEIZeH.WorKers.DEV
+  network: ws
+  ws-opts:
+    path: /vl/lYNtP7z8pJUmfp01tz5wEnuDujJtZ
+    headers:
+      Host: fpoixf69hqt3e6d4urtb.mamadneizeh.workers.dev
+proxy-groups:
+- name: PROXIES
+  type: select
+  proxies:
+  - AUTO
+  - 🇮🇶 IQ 01 - xiaohe
+- name: AUTO
+  type: url-test
+  url: https://www.google.com/generate_204
+  interval: 300
+  proxies:
+  - 🇮🇶 IQ 01 - xiaohe
+rules:
+- MATCH,PROXIES

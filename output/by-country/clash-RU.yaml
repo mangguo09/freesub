@@ -6,26 +6,32 @@ log-level: info
 proxies:
 - name: 🇷🇺 俄罗斯 (Russia) 01 - xiaohe
   type: vless
-  server: 31.130.149.165
-  port: 875
-  uuid: 4a9d6057-985a-4531-851c-5b4db77b0409
-  udp: true
-  tls: false
-  skip-cert-verify: true
-- name: 🇷🇺 俄罗斯 (Russia) 02 - xiaohe
-  type: vless
-  server: 95.163.232.171
-  port: 14443
-  uuid: 365de9e9-ba29-4819-af2d-766f9638e3be
+  server: fbsv6.guardora.pro
+  port: 443
+  uuid: bc5ec86c-3e65-4272-994c-59a924c72a68
   udp: true
   tls: true
   skip-cert-verify: true
-  servername: media-se.compressor.work
+  servername: fbsv6.guardora.pro
   network: ws
   ws-opts:
     path: /ws
     headers:
-      Host: 95.163.232.171
+      Host: fbsv6.guardora.pro
+- name: 🇷🇺 俄罗斯 (Russia) 02 - xiaohe
+  type: vless
+  server: 104.21.31.137
+  port: 443
+  uuid: 59c70620-d2f3-4255-9d6f-f4c5103d64ce
+  udp: true
+  tls: true
+  skip-cert-verify: true
+  servername: 59fssIBE-SDDrRs3qW83QQZz0H1NT-o.q7qwsxItB6BYi5nMTa4naAlz.woRkErs.deV
+  network: ws
+  ws-opts:
+    path: /vl/FpYFoMlg8sRpgV7SSaOaRYa3fagqGu?ed
+    headers:
+      Host: 59fssibe-sddrrs3qw83qqzz0h1nt-o.q7qwsxitb6byi5nmta4naalz.workers.dev
 proxy-groups:
 - name: PROXIES
   type: select
