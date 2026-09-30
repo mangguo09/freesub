@@ -5,16 +5,6 @@ mode: rule
 log-level: info
 proxies:
 - name: 🇦🇲 AM 01 - xiaohe
-  type: vmess
-  server: 23.162.200.198
-  port: 18000
-  uuid: f8c8dc3d-0d37-46b0-8b34-a7232882fcfe
-  alterId: 0
-  cipher: auto
-  udp: true
-  tls: false
-  skip-cert-verify: true
-- name: 🇦🇲 AM 02 - xiaohe
   type: vless
   server: 77.91.68.70
   port: 55983
@@ -32,13 +22,11 @@ proxy-groups:
   proxies:
   - AUTO
   - 🇦🇲 AM 01 - xiaohe
-  - 🇦🇲 AM 02 - xiaohe
 - name: AUTO
   type: url-test
   url: https://www.google.com/generate_204
   interval: 300
   proxies:
   - 🇦🇲 AM 01 - xiaohe
-  - 🇦🇲 AM 02 - xiaohe
 rules:
 - MATCH,PROXIES

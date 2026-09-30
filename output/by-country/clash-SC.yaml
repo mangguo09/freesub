@@ -13,18 +13,18 @@ proxies:
   udp: true
 - name: 🇸🇨 SC 02 - xiaohe
   type: vless
-  server: 154.211.8.227
-  port: 2087
-  uuid: 40af9131-d540-448a-bc56-5bba147a1dc3
+  server: 156.224.79.105
+  port: 443
+  uuid: ab61daa1-b7fb-486e-8946-b1da9a444685
   udp: true
   tls: true
   skip-cert-verify: true
-  servername: proxy-34l.pages.dev
+  servername: cf2us.3rr0r.online
   network: ws
   ws-opts:
-    path: /
+    path: /proxyip=ProxyIP.HK.CMLiussss.Net
     headers:
-      Host: proxy-34l.pages.dev
+      Host: cf2us.3rr0r.online
 proxy-groups:
 - name: PROXIES
   type: select
