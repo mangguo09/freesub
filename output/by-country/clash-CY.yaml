@@ -16,26 +16,17 @@ proxies:
     public-key: MN6QjUHDUXyteMdR-cDna89fq4X3qgQhLnNqTtRUbBQ
   servername: deepl.com
   client-fingerprint: chrome
-- name: 🇨🇾 CY 02 - xiaohe
-  type: ss
-  server: 132.243.255.3
-  port: 40440
-  cipher: aes-256-gcm
-  password: 78235e7dc55e9ad1
-  udp: true
 proxy-groups:
 - name: PROXIES
   type: select
   proxies:
   - AUTO
   - 🇨🇾 CY 01 - xiaohe
-  - 🇨🇾 CY 02 - xiaohe
 - name: AUTO
   type: url-test
   url: https://www.google.com/generate_204
   interval: 300
   proxies:
   - 🇨🇾 CY 01 - xiaohe
-  - 🇨🇾 CY 02 - xiaohe
 rules:
 - MATCH,PROXIES

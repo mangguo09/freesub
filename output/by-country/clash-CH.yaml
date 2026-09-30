@@ -4,47 +4,47 @@ allow-lan: true
 mode: rule
 log-level: info
 proxies:
-- name: 🇩🇰 DK 01 - xiaohe
+- name: 🇨🇭 CH 01 - xiaohe
   type: vless
-  server: 2.26.17.128
+  server: 185.18.250.245
   port: 443
-  uuid: 9e3132b8-b595-444a-833a-2de44789f9d7
+  uuid: f77299ea-e13d-417d-8cdc-ce5566dfc94b
   udp: true
   tls: true
   skip-cert-verify: true
-  servername: shephe.dpdns.org
+  servername: edu.ruangguru.com.r3xxe.eu.cc
+  network: ws
+  ws-opts:
+    path: /nl-tw
+    headers:
+      Host: edu.ruangguru.com.r3xxe.eu.cc
+- name: 🇨🇭 CH 02 - xiaohe
+  type: vless
+  server: 162.159.153.4
+  port: 443
+  uuid: f2a73750-3087-48ff-a763-1348c15dce68
+  udp: true
+  tls: true
+  skip-cert-verify: true
+  servername: rAyAn-007.mAxImA.DpDnS.OrG
   network: ws
   ws-opts:
     path: /
     headers:
-      Host: shephe.dpdns.org
-- name: 🇩🇰 DK 02 - xiaohe
-  type: vless
-  server: 2.26.17.128
-  port: 443
-  uuid: 9e3132b8-b595-444a-833a-2de44789f9d7
-  udp: true
-  tls: true
-  skip-cert-verify: true
-  servername: shephe.dpdns.org
-  network: ws
-  ws-opts:
-    path: /
-    headers:
-      Host: shephe.dpdns.org
+      Host: rAyAn-007.mAxImA.DpDnS.OrG
 proxy-groups:
 - name: PROXIES
   type: select
   proxies:
   - AUTO
-  - 🇩🇰 DK 01 - xiaohe
-  - 🇩🇰 DK 02 - xiaohe
+  - 🇨🇭 CH 01 - xiaohe
+  - 🇨🇭 CH 02 - xiaohe
 - name: AUTO
   type: url-test
   url: https://www.google.com/generate_204
   interval: 300
   proxies:
-  - 🇩🇰 DK 01 - xiaohe
-  - 🇩🇰 DK 02 - xiaohe
+  - 🇨🇭 CH 01 - xiaohe
+  - 🇨🇭 CH 02 - xiaohe
 rules:
 - MATCH,PROXIES
