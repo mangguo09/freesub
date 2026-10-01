@@ -6,6 +6,20 @@ log-level: info
 proxies:
 - name: 🇨🇱 CL 01 - xiaohe
   type: vless
+  server: 64.176.15.110
+  port: 2053
+  uuid: 04c808e2-0b59-47b0-a54b-32fc7ef1c902
+  udp: true
+  tls: true
+  skip-cert-verify: true
+  servername: free.cndyw.ggff.net
+  network: ws
+  ws-opts:
+    path: pyip=bpb.yousef.isegaro.com
+    headers:
+      Host: free.cndyw.ggff.net
+- name: 🇨🇱 CL 02 - xiaohe
+  type: vless
   server: 34.176.187.219
   port: 443
   uuid: ad5325f8-f0b3-41c4-a561-113529b60e70
@@ -22,11 +36,13 @@ proxy-groups:
   proxies:
   - AUTO
   - 🇨🇱 CL 01 - xiaohe
+  - 🇨🇱 CL 02 - xiaohe
 - name: AUTO
   type: url-test
   url: https://www.google.com/generate_204
   interval: 300
   proxies:
   - 🇨🇱 CL 01 - xiaohe
+  - 🇨🇱 CL 02 - xiaohe
 rules:
 - MATCH,PROXIES
