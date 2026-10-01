@@ -4,30 +4,26 @@ allow-lan: true
 mode: rule
 log-level: info
 proxies:
-- name: 🇲🇭 MH 01 - xiaohe
+- name: 🇪🇪 EE 01 - xiaohe
   type: vless
-  server: 185.207.196.30
-  port: 8880
-  uuid: 6202b230-417c-4d8e-b624-0f71afa9c75d
+  server: 94.183.170.135
+  port: 8443
+  uuid: 06c4e938-2954-478f-a870-ca1b163e30e9
   udp: true
-  tls: false
+  tls: true
   skip-cert-verify: true
-  network: ws
-  ws-opts:
-    path: /?ed=2560
-    headers:
-      Host: vms.lifetime11.workers.dev
+  servername: estproxy4.lockdwn.com
 proxy-groups:
 - name: PROXIES
   type: select
   proxies:
   - AUTO
-  - 🇲🇭 MH 01 - xiaohe
+  - 🇪🇪 EE 01 - xiaohe
 - name: AUTO
   type: url-test
   url: https://www.google.com/generate_204
   interval: 300
   proxies:
-  - 🇲🇭 MH 01 - xiaohe
+  - 🇪🇪 EE 01 - xiaohe
 rules:
 - MATCH,PROXIES
