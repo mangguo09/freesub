@@ -6,7 +6,7 @@ log-level: info
 proxies:
 - name: 🇫🇮 FI 01 - xiaohe
   type: vless
-  server: smart.avenone.ir
+  server: 77.42.20.51
   port: 1085
   uuid: 0c1b7949-fe09-43d9-863f-2c031f66bfc1
   udp: true
