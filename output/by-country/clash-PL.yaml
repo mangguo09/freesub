@@ -18,7 +18,7 @@ proxies:
   client-fingerprint: chrome
 - name: 🇵🇱 PL 02 - xiaohe
   type: vless
-  server: 77.83.246.202
+  server: pl.monkora.org
   port: 443
   uuid: 454431fc-71e2-42b1-b375-5b55dd06666a
   udp: true

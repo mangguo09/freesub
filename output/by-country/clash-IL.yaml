@@ -4,31 +4,29 @@ allow-lan: true
 mode: rule
 log-level: info
 proxies:
-- name: 🇬🇷 GR 01 - xiaohe
+- name: 🇮🇱 IL 01 - xiaohe
   type: vless
-  server: 85.90.197.156
+  server: 34.165.56.30
   port: 443
-  uuid: 04c808e2-0b59-47b0-a54b-32fc7ef1c902
+  uuid: 0c40bce9-8710-4820-8f22-0742b61df999
   udp: true
   tls: true
   skip-cert-verify: true
-  servername: free.cndyw.ggff.net
-  network: ws
-  ws-opts:
-    path: pyip=bpb.yousef.isegaro.comfp=random
-    headers:
-      Host: free.cndyw.ggff.net
+  reality-opts:
+    public-key: AeQDUAVCESyA1hFkw6lENmgWAY3sBH9CFPpPAddPwVc
+  servername: www.cloudflare.com
+  client-fingerprint: chrome
 proxy-groups:
 - name: PROXIES
   type: select
   proxies:
   - AUTO
-  - 🇬🇷 GR 01 - xiaohe
+  - 🇮🇱 IL 01 - xiaohe
 - name: AUTO
   type: url-test
   url: https://www.google.com/generate_204
   interval: 300
   proxies:
-  - 🇬🇷 GR 01 - xiaohe
+  - 🇮🇱 IL 01 - xiaohe
 rules:
 - MATCH,PROXIES

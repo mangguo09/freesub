@@ -6,7 +6,7 @@ log-level: info
 proxies:
 - name: 🇧🇷 BR 01 - xiaohe
   type: vless
-  server: br.monkora.org
+  server: 147.45.116.19
   port: 443
   uuid: 454431fc-71e2-42b1-b375-5b55dd06666a
   udp: true
