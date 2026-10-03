@@ -18,17 +18,33 @@ proxies:
     path: /vpnjantit
     headers:
       Host: kz1.vpnjantit.com
+- name: 🇰🇿 KZ 02 - xiaohe
+  type: vless
+  server: 104.238.24.139
+  port: 8443
+  uuid: 04c808e2-0b59-47b0-a54b-32fc7ef1c902
+  udp: true
+  tls: true
+  skip-cert-verify: true
+  servername: free.cndyw.ggff.net
+  network: ws
+  ws-opts:
+    path: pyip=bpb.yousef.isegaro.comfp=random
+    headers:
+      Host: free.cndyw.ggff.net
 proxy-groups:
 - name: PROXIES
   type: select
   proxies:
   - AUTO
   - 🇰🇿 KZ 01 - xiaohe
+  - 🇰🇿 KZ 02 - xiaohe
 - name: AUTO
   type: url-test
   url: https://www.google.com/generate_204
   interval: 300
   proxies:
   - 🇰🇿 KZ 01 - xiaohe
+  - 🇰🇿 KZ 02 - xiaohe
 rules:
 - MATCH,PROXIES
